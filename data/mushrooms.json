@@ -1,0 +1,192 @@
+{
+    "Changes":  [
+
+        {
+            "LogName": "Load mushroom textures",
+            "Action": "Load",
+            "Target": "{{ModID}}/Mushrooms1, {{ModID}}/Mushrooms2",
+            "FromFile": "assets/objects/{{TargetWithoutPath}}.png"
+        },
+
+        { 
+            "LogName": "Add new edible mushrooms",
+            "Action": "EditData",
+            "Target": "data/objects",
+            "Entries": 
+            {
+              
+              "MM_GreatWoodMushroom":
+                {
+                   "Name": "MM_GreatWoodMushroom",
+                   "DisplayName": "{{i18n:GreatWoodMushroomDisplayName}}",
+                    "Description": "{{i18n:GreatWoodMushroomDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 200, 
+                   "Texture": "{{ModID}}/Mushrooms1", 
+                    "SpriteIndex": 1, 
+                   "Edibility": 50,
+                    "IsDrink": false,
+                    "ContextTags": [ "preserves_pickle", "color_brown", "edible_mushroom" ],
+                
+                },
+               
+                
+              "MM_OrangePeelFungus":
+                {
+                   "Name": "MM_OrangePeelFungus",
+                   "DisplayName": "{{i18n:OrangePeelFungusDisplayName}}",
+                    "Description": "{{i18n:OrangePeelFungusDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 300, 
+                   "Texture": "{{ModID}}/Mushrooms1", 
+                    "SpriteIndex": 2, 
+                   "Edibility": 60,
+                    "IsDrink": false,
+                    "ContextTags": [ "preserves_pickle", "color_orange", "edible_mushroom" ],
+                
+                },
+
+                       
+              "MM_RubyBolete":
+                {
+                   "Name": "MM_RubyBolete",
+                   "DisplayName": "{{i18n:RubyBoleteDisplayName}}",
+                    "Description": "{{i18n:RubyBoleteDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 600, 
+                   "Texture": "{{ModID}}/Mushrooms1", 
+                    "SpriteIndex": 3, 
+                   "Edibility": 1,
+                    "IsDrink": false,
+                    "ContextTags": [ "color_dark_red", "color_dark_pink", "edible_mushroom" ],
+                
+                },
+
+                   "MM_OrangeGrisette":
+                {
+                   "Name": "MM_OrangeGrisette",
+                   "DisplayName": "{{i18n:OrangeGrisetteDisplayName}}",
+                    "Description": "{{i18n:OrangeGrisetteDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 360, 
+                   "Texture": "{{ModID}}/Mushrooms2", 
+                    "SpriteIndex": 3, 
+                   "Edibility": 25,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_orange", "color_yellow", "preserves_pickle", "edible_mushroom" ],
+                
+                },
+        },
+
+        },
+
+         { 
+            "LogName": "Add new poisonous mushrooms",
+            "Action": "EditData",
+            "When": { "Include Poisonous Mushrooms": true },
+            "Target": "data/objects",
+            "Entries": 
+            {
+                "MM_DestroyingAngel":
+                {
+                    "Name": "MM_DestroyingAngel",
+                    "DisplayName": "{{i18n:DestroyingAngelDisplayName}}",
+                    "Description": "{{i18n:DestroyingAngelDescription}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 500,
+                    "Texture": "{{ModID}}/Mushrooms1",
+                    "SpriteIndex": 0,
+                    "Edibility": -200,
+                    "IsDrink": false,
+                    "ContextTags": [ "color_white", "poisonous_mushroom"],
+    
+                },
+        
+             
+                 "MM_TheSickener":
+                {
+                   "Name": "MM_TheSickener",
+                   "DisplayName": "{{i18n:TheSickenerDisplayName}}",
+                    "Description": "{{i18n:TheSickenerDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 200, 
+                   "Texture": "{{ModID}}/Mushrooms2", 
+                    "SpriteIndex": 2, 
+                   "Edibility": -50,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_dark_red", "color_dark_pink", "color_red", "poisonous_mushroom" ],
+                
+                },
+
+        },
+
+        },
+
+           { 
+            "LogName": "Add new inedible mushrooms",
+            "Action": "EditData",
+            "When": { "Include Inedible Mushrooms": true },
+            "Target": "data/objects",
+            "Entries": 
+            {
+
+                "MM_DevilsFingers":
+                {
+                   "Name": "MM_DevilsFingers",
+                   "DisplayName": "{{i18n:DevilsFingersDisplayName}}",
+                    "Description": "{{i18n:DevilsFingersDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 666, 
+                   "Texture": "{{ModID}}/Mushrooms1", 
+                    "SpriteIndex": 4, 
+                   "Edibility": -1,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_dark_red", "color_dark_pink", "inedible_mushroom" ],
+                
+                },
+
+                 "MM_JubileeWaxcap":
+                {
+                   "Name": "MM_JubileeWaxcap",
+                   "DisplayName": "{{i18n:JubileeWaxcapDisplayName}}",
+                    "Description": "{{i18n:JubileeWaxcapDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 600, 
+                   "Texture": "{{ModID}}/Mushrooms2", 
+                    "SpriteIndex": 0, 
+                   "Edibility": -1,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_pale_violet", "color_pink", "inedible_mushroom" ],
+                
+                },
+
+                 "MM_BluePinkgill":
+                {
+                   "Name": "MM_BluePinkgill",
+                   "DisplayName": "{{i18n:BluePinkgillDisplayName}}",
+                    "Description": "{{i18n:BluePinkgillDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 4000, 
+                   "Texture": "{{ModID}}/Mushrooms2", 
+                    "SpriteIndex": 1, 
+                   "Edibility": -1,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_blue", "color_cyan", "color_aquamarine", "inedible_mushroom" ],
+                
+                },
+                
+        },
+
+        },
+
+    ]
+}

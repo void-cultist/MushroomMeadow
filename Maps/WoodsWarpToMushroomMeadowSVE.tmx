@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.10.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="4" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="25" nextobjectid="17731">
+ <tileset firstgid="1" name="spring_AlvadeasTileSheet" tilewidth="16" tileheight="16" tilecount="1800" columns="30">
+  <image source="Custom tilesheets/[CP] Alvadea's Tilesheets/assets/outdoor/Vanilla/spring_AlvadeasTileSheet.png" width="480" height="960"/>
+ </tileset>
+ <layer id="1" name="Back" width="4" height="4">
+  <data>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <layer id="2" name="Back2" width="4" height="4">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data>
+   <tile gid="738"/>
+   <tile gid="739"/>
+   <tile gid="740"/>
+   <tile gid="741"/>
+   <tile gid="768"/>
+   <tile gid="681"/>
+   <tile gid="682"/>
+   <tile gid="771"/>
+   <tile gid="798"/>
+   <tile gid="711"/>
+   <tile gid="712"/>
+   <tile gid="801"/>
+   <tile gid="828"/>
+   <tile gid="829"/>
+   <tile gid="830"/>
+   <tile gid="831"/>
+  </data>
+ </layer>
+ <layer id="3" name="Back3" width="4" height="4">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <layer id="4" name="Buildings" width="4" height="4">
+  <data>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <layer id="5" name="Buildings2" width="4" height="4">
+  <properties>
+   <property name="Draw" value="Buildings"/>
+  </properties>
+  <data>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <layer id="6" name="Front" width="4" height="4">
+  <data>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <layer id="7" name="Front2" width="4" height="4">
+  <properties>
+   <property name="Draw" value="Front"/>
+  </properties>
+  <data>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <layer id="8" name="AlwaysFront" width="4" height="4">
+  <data>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <layer id="9" name="AlwaysFront2" width="4" height="4">
+  <properties>
+   <property name="Draw" value="AlwaysFront"/>
+  </properties>
+  <data>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <layer id="10" name="Paths" width="4" height="4">
+  <data>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <layer id="11" name="Light Coordinates" width="4" height="4">
+  <data>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <layer id="12" name="Ancient Fern Seed Coordinates" width="4" height="4">
+  <data>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+   <tile/>
+  </data>
+ </layer>
+ <objectgroup id="13" name="Back" visible="0">
+  <object id="4987" name="TileData" x="-16" y="-16" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="4988" name="TileData" x="0" y="-16" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="4989" name="TileData" x="16" y="-16" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="4990" name="TileData" x="32" y="-16" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="4991" name="TileData" x="48" y="-16" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="4992" name="TileData" x="64" y="-16" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5077" name="TileData" x="-16" y="0" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5078" name="TileData" x="0" y="0" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5079" name="TileData" x="16" y="0" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5080" name="TileData" x="32" y="0" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5081" name="TileData" x="48" y="0" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5082" name="TileData" x="64" y="0" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5167" name="TileData" x="-16" y="16" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5168" name="TileData" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5169" name="TileData" x="16" y="16" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5170" name="TileData" x="32" y="16" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5171" name="TileData" x="48" y="16" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5172" name="TileData" x="64" y="16" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5257" name="TileData" x="-16" y="32" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5258" name="TileData" x="0" y="32" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5259" name="TileData" x="16" y="32" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5260" name="TileData" x="32" y="32" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5261" name="TileData" x="48" y="32" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5262" name="TileData" x="64" y="32" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5347" name="TileData" x="-16" y="48" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5348" name="TileData" x="0" y="48" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5349" name="TileData" x="16" y="48" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5350" name="TileData" x="32" y="48" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5351" name="TileData" x="48" y="48" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5352" name="TileData" x="64" y="48" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5437" name="TileData" x="-16" y="64" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5438" name="TileData" x="0" y="64" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5439" name="TileData" x="16" y="64" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5440" name="TileData" x="32" y="64" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5441" name="TileData" x="48" y="64" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="5442" name="TileData" x="64" y="64" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="14" name="Back2" visible="0"/>
+ <objectgroup id="15" name="Back3" visible="0"/>
+ <objectgroup id="16" name="Buildings" visible="0"/>
+ <objectgroup id="17" name="Buildings2" visible="0"/>
+ <objectgroup id="18" name="Front" visible="0">
+  <object id="12207" name="TileData" x="-16" y="64" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="12208" name="TileData" x="0" y="64" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="19" name="Front2" visible="0"/>
+ <objectgroup id="20" name="AlwaysFront" visible="0">
+  <object id="16084" name="TileData" x="-16" y="64" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="21" name="AlwaysFront2" visible="0"/>
+ <objectgroup id="22" name="Paths" visible="0"/>
+ <objectgroup id="23" name="Light Coordinates" visible="0">
+  <object id="17684" name="TileData" x="-16" y="0" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="24" name="Ancient Fern Seed Coordinates" visible="0">
+  <object id="17725" name="TileData" x="16" y="-16" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="17728" name="TileData" x="64" y="64" width="16" height="16">
+   <properties>
+    <property name="@Flip" type="int" value="0"/>
+    <property name="@Rotation" type="int" value="0"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

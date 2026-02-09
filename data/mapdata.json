@@ -1,0 +1,118 @@
+{
+    "Changes": [
+
+        {
+            "LogName": "Load mushroom meadow maps",
+            "Action": "Load",
+            "Target": "Maps/{{ModID}}_MushroomMeadow",
+            "FromFile": "assets/Maps/MushroomMeadow.tmx",
+        },
+        {
+            "LogName": "Create New Location: Mushroom Meadow",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModID}}_MushroomMeadow": 
+                {
+                    	"DefaultArrivalTile": { "X": 39, "Y": 22},
+                        "CreateOnLoad": {
+                            "MapPath": "Maps/{{ModID}}_MushroomMeadow"
+                        }
+                }
+            }
+        },
+
+        {
+            "LogName": "Add warp patch to woods",
+            "Action": "EditMap",
+            "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": false },
+            "Target": "Maps/Woods",
+            "PatchMode": "Replace",
+            "FromFile": "assets/Maps/WoodsWarpToMushroomMeadow.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 4
+            },
+            "ToArea": { "X": 40, "Y":26, "Width": 4, "Height": 4 }
+        },
+
+        
+        {
+            "LogName": "Add warp patch to woods SVE",
+            "Action": "EditMap",
+            "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": true },
+            "Target": "Maps/Woods",
+            "PatchMode": "Overlay",
+            "FromFile": "assets/Maps/WoodsWarpToMushroomMeadowSVE.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 4
+            },
+            "ToArea": { "X": 37, "Y":56, "Width": 4, "Height": 4 }
+        },
+
+
+        {
+            
+    "LogName": "Add magic warp tiles from Woods to mushroom meadow",
+    "Action": "EditMap",
+      "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": false },
+    "Target": "Maps/Woods", 
+    "MapTiles": [  
+        {  
+        "Position": { "X": 41, "Y": 27 }, 
+        "Layer": "Back", 
+        "SetProperties": { 
+            "TouchAction": "MagicWarp {{ModID}}_MushroomMeadow  39 22" } }, 
+        { 
+        "Position": { "X": 41, "Y": 28 },
+        "Layer": "Back", 
+        "SetProperties": { 
+            "TouchAction": "MagicWarp {{ModID}}_MushroomMeadow  39 22" } } 
+        ]
+
+        },
+        
+        {
+            
+    "LogName": "Add magic warp tiles from Woods to mushroom meadow SVE",
+    "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": true },
+    "Action": "EditMap",
+    "Target": "Maps/Woods", 
+    "MapTiles": [  
+        {  
+        "Position": { "X": 38, "Y": 57 }, 
+        "Layer": "Back", 
+        "SetProperties": { "TouchAction": "MagicWarp {{ModID}}_MushroomMeadow  39 22" } }, 
+        { "Position": { "X": 38, "Y": 58 }, 
+        "Layer": "Back", 
+        "SetProperties": { "TouchAction": "MagicWarp {{ModID}}_MushroomMeadow  39 22" } } 
+    ]
+
+        },
+
+        {
+    
+    "LogName": "Add magic warp tiles from MM to Woods",
+    "Action": "EditMap",
+    "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": false },
+    "Target": "Maps/{{ModID}}_MushroomMeadow",
+    "MapTiles": [  { "Position": { "X": 39, "Y": 23 }, "Layer": "Back", "SetProperties": { "TouchAction": "MagicWarp Woods 42 28" } },  { "Position": { "X": 40, "Y": 23 }, "Layer": "Back", "SetProperties": { "TouchAction": "MagicWarp Woods 42 28" } } ]
+        },
+    
+    {
+    
+    "LogName": "Add magic warp tiles from MM to Woods",
+    "Action": "EditMap",
+    "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": true },
+    "Target": "Maps/{{ModID}}_MushroomMeadow",
+    "MapTiles": [  { "Position": { "X": 39, "Y": 23 }, "Layer": "Back", "SetProperties": { "TouchAction": "MagicWarp Woods 39 57" } },  { "Position": { "X": 40, "Y": 23 }, "Layer": "Back", "SetProperties": { "TouchAction": "MagicWarp Woods 39 57" } } ]
+        }
+    
+    
+    ]
+}

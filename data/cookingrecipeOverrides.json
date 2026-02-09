@@ -1,0 +1,42 @@
+{
+    "Changes": [
+        {
+        "LogName": "Space Core cooking recipe overrides",
+        "Action": "EditData",
+        "Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+        "Entries": {
+        "MM_BakedMushroomRisotto":
+            {
+            "ProductQualifiedId": "(O)MM_BakedMushroomRisotto", //or vanilla dish
+            "ProductAmount": 1,
+            "Ingredients": 
+                        {
+                        "Type": "Item",
+                        "Value": "(O)423",
+                        "Amount": 1,
+                        },
+                        {
+                        "Type": "Item",
+                        "Value": "(O)248",
+                        "Amount": 1,
+                        },
+                        {
+                        "Type": "ContextTag",
+                        "Value": "edible_mushroom",
+                        "Amount": 2,
+                        "OverrideText": "Edible Mushroom",
+                        "OverrideTexturePath": "Maps/springobjects", //determines which sprite will be used to override the icon in the recipe
+                        "OverrideTextureRect": 
+                            { //this determines the position of the sprite on the spritesheet/tilesheet
+                            "X": 320,
+                            "Y": 256,
+                            "Width": 16,
+                            "Height": 16
+                            },
+                    },
+        }
+        },
+        
+        },
+    ]
+}

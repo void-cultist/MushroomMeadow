@@ -1,0 +1,18 @@
+
+    {
+        "Name": "Mushroom Meadow",
+        "Author": "voidcultist",
+        "Version": "0.0.1",
+        "Description": "Adds mushrooms, a maze and a weird vendor.",
+        "UniqueID": "void.MM",
+        "UpdateKeys": [], 
+        "ContentPackFor": {
+            "UniqueID": "Pathoschild.ContentPatcher"
+        },
+        "Dependencies": [
+            {
+                "UniqueID": "spacechase0.SpaceCore",
+                "IsRequired": true
+            }
+        ]
+    }

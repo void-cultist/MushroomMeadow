@@ -1,0 +1,10 @@
+{ "Changes": [
+    {
+      "LogName": "Mushroom Meadow custom tilesheet",
+      "Action": "Load",
+      "Target": "maps/spring_MushroomMeadow, maps/summer_MushroomMeadow, maps/fall_MushroomMeadow, maps/winter_MushroomMeadow",
+      "FromFile": "assets/Maps/{{TargetWithoutPath}}.png"
+    },
+
+]
+}

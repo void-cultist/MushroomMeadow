@@ -1,0 +1,86 @@
+{
+    "Changes": [
+            
+            {
+                "LogName": "Load Cooking object textures",
+                "Action": "Load",
+                "Target": "{{ModID}}/Cooking",
+                "FromFile": "assets/{{TargetWithoutPath}}.png",
+            },
+            
+        
+        {
+            "LogName": "Add new mushroom dishes",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                 // https://stardewvalleywiki.com/Modding:Objects
+                  "MM_BakedMushroomRisotto":
+                    {
+                       "Name": "MM_BakedMushroomRisotto",
+                       "DisplayName": "Baked Mushroom Risotto",
+                        "Description": "A few slices of dried mushroom and their soaking liquor bring an undertone of mushroomy richness to the rice",
+                      "Type": "Cooking",
+                        "Category": -7,
+                        "Price": 500, 
+                       "Texture": "{{ModID}}/Cooking", 
+                        "SpriteIndex": 0, 
+                       "Edibility": 90,
+                        "IsDrink": false,
+                        "ContextTags": [ "mushroom_dish" ],
+                       "Buffs": [
+                            {
+                                "Id": "Food",
+                                "Duration": 1000,
+                                "CustomAttributes": {
+                                    "ForagingLevel": 3.0,
+                                    "LuckLevel": 2.0
+
+                                },
+                                "IsDebuff": false,
+                            }
+                       ]
+                    },
+                
+                "MM_WildMushroomSoup": {  
+                       "Name": "MM_WildMushroomSoup",
+                       "DisplayName": "Wild Mushroom Soup",
+                        "Description": "The simplicity of this soup allows you to appreciate the full flavour of the wild mushrooms you’ve gathered.",
+                      "Type": "Cooking",
+                        "Category": -1,
+                        "Price": 400, 
+                       "Texture": "{{ModID}}/Cooking", 
+                        "SpriteIndex": 1, 
+                       "Edibility": 70,
+                        "IsDrink": false,
+                        "ContextTags": [ "mushroom_dish" ],
+                       "Buffs": [
+                            {
+                                "Id": "Food",
+                                "Duration": 800,
+                                "CustomAttributes": {
+                                    "Attack": 1.0,
+                                    "Defense": 2.0
+                                    },
+                                "IsDebuff": false,
+                            }
+                       ]
+                    },
+                   
+
+                }
+
+                   
+            }
+
+        {
+        "LogName": "Add cooking recipes",
+        "Action": "EditData",
+        "Target": "Data/CookingRecipes",
+        "Entries": {
+        "MM_BakedMushroomRisottoRecipe": "(O)MM_GreatWoodMushroom 2 (O)423 (O)248/10 10/MM_BakedMushroomRisotto/default/Baked Mushroom Risotto",
+        "MM_WildMushroomSoupRecipe": "(O)MM_GreatWoodMushroom 1 (O)404 2 (O)4571/25 5/MM_WildMushroomSoup 1/default/Wild Mushroom Soup",
+        },
+        },
+    ]
+}

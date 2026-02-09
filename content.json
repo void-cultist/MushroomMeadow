@@ -1,0 +1,81 @@
+{
+    "Format": "2.9.0",
+
+    "DynamicTokens": [
+
+        {
+            "Name": "WoodsPatchToArea",
+            "Value": "{ \"X\": 40, \"Y\":26, \"Width\": 4, \"Height\": 4 }"
+        },
+
+        {
+            "Name": "WoodsPatchToArea",
+            "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": true },
+            "Value": "{ \"X\": 37, \"Y\":56, \"Width\": 4, \"Height\": 4 }"
+        },
+        {
+            "Name": "WarpToMM",
+            "Value": "{  \"Position\": { \"X\": 41, \"Y\": 27 }, \"Layer\": \"Back\", \"SetProperties\": { \"TouchAction\": \"MagicWarp 39 22 {{ModID}}_MushroomMeadow\" } }, { \"Position\": { \"X\": 41, \"Y\": 28 }, \"Layer\": \"Back\", \"SetProperties\": { \"TouchAction\": \"MagicWarp 39 22 {{ModID}}_MushroomMeadow\" } },"
+        },
+        {
+            "Name": "WarpToMM",
+            "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": true },
+            "Value": "{ \"Position\": { \"X\": 38, \"Y\": 57 }, \"Layer\": \"Back\", \"SetProperties\": { \"TouchAction\": \"MagicWarp 39 22 {{ModID}}_MushroomMeadow\" } },  { \"Position\": { \"X\": 38, \"Y\": 58 }, \"Layer\": \"Back\", \"SetProperties\": { \"TouchAction\": \"MagicWarp 39 22 {{ModID}}_MushroomMeadow\" } },"
+        },
+        {
+            "Name": "WarpToWoods",
+            "Value": "{ { \"Position\": { \"X\": 39, \"Y\": 23 }, \"Layer\": \"Back\", \"SetProperties\": { \"TouchAction\": \"MagicWarp 42 28 Woods\" } }, { { \"Position\": { \"X\": 40, \"Y\": 23 }, \"Layer\": \"Back\", \"SetProperties\": { \"TouchAction\": \"MagicWarp 42 28 Woods\" } },"
+        },
+        {
+            "Name": "WarpToWoods",
+            "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": true },
+            "Value": "{ { \"Position\": { \"X\": 39, \"Y\": 23 }, \"Layer\": \"Back\", \"SetProperties\": { \"TouchAction\": \"MagicWarp 42 28 Woods\" } }, { { \"Position\": { \"X\": 40, \"Y\": 23 }, \"Layer\": \"Back\", \"SetProperties\": { \"TouchAction\": \"MagicWarp 39 47 Woods\" } },"
+        },
+        
+    ],
+
+    
+        "ConfigSchema": {
+            "Include Poisonous Mushrooms":
+            {
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "Description": "Toggle this option off if you do not want to add poisonous mushrooms to your game.",
+            "Section": "Mushroom configs",
+            },
+
+             "Include Inedible Mushrooms":
+            {
+            "AllowValues": "true, false",
+            "Default": true,
+            "AllowBlank": false,
+            "Description": "Toggle this option off if you do not want to add inedible mushrooms to your game.",
+            "Section": "Mushroom configs",
+            },
+            
+    },
+     
+
+"Changes": [
+
+//includes
+
+{
+    "LogName": "Include mushroom data",
+    "Action": "Include",
+    "FromFile": "data/mushrooms.json"
+},
+{
+    "LogName": "Include custom tilesheet",
+    "Action": "Include",
+    "FromFile": "data/tilesheets.json"
+},
+{
+    "LogName": "Include map data",
+    "Action": "Include",
+    "FromFile": "data/mapdata.json"
+}
+    
+    ]
+}
