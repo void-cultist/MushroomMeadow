@@ -1,0 +1,14 @@
+{
+    "Changes": 
+    [
+        {
+            "LogName": "NPC Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/{{G}}",
+            "Entries": {
+                "spring": "820 {{ModID}}_Interior 22 18 2 {{ModID}}_cursedanimation/1800 {{ModID}}_MushroomMeadow 27 15 1 {{ModID}}_cursedanimation/2200 {{ModID}}_Interior 19 20 2",
+                "rain": "820 {{ModID}}_Interior 22 18 2 {{ModID}}_cursedanimation"
+            }
+         }
+    ]
+}

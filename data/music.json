@@ -1,0 +1,63 @@
+{
+    "Changes": [
+         {			
+	"LogName": "Add custom tracks",
+    "Action": "EditData",
+    "Target": "Data/AudioChanges",
+    "Entries": {
+                "{{ModId}}_UNKNOWNENTITY": //inside G's house
+				{
+                    "ID": "{{ModId}}_UNKNOWNENTITY",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/UNKNOWN_ENTITY - GLORYTOTHEMACHINE.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "{{ModId}}_PeacefulFireworks": //MM main area before certain conditions apply
+				{
+                    "ID": "{{ModId}}_PeacefulFireworks",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/XTRA001 ; PEACEFUL_FIREWORKS.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "{{ModId}}_SaturnsRing": //one of the areas or event music
+				{
+                    "ID": "{{ModId}}_SaturnsRing",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/SATURNS_RING - GLORYTOTHEMACHINE.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "{{ModId}}_WaterLvl": //one of the areas or event music
+				{
+                    "ID": "{{ModId}}_WaterLvl",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/WATER_LVL - GLORYTOTHEMACHINE.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "{{ModId}}_CVLT": //maybe theme that plays in events with g??
+				{
+                    "ID": "{{ModId}}_CVLT",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/CVLT.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                 "{{ModId}}_StygianLights": //one of the areas or event music
+				{
+                    "ID": "{{ModId}}_StygianLights",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/Stygian Lights.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                }
+
+///vanilla: glowshroom grotto as alternative
+
+
+            }
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+{
+    "Changes": [
+         {
+"LogName": "Strings for maps",
+"Action": "EditData",
+"Target": "Strings/StringsFromMaps",
+"Entries": {
+    "LockedDoorMessage": "Perhaps you should not go to this room."
+
+}
+         }
+    ]
+}

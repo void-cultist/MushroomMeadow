@@ -13,6 +13,14 @@
             {
                 "UniqueID": "spacechase0.SpaceCore",
                 "IsRequired": true
+            },
+            {
+                "UniqueID": "mushymato.MMAP",
+                "IsRequired": true
+            },
+            {
+                "UniqueID": "Spiderbuttons.BETAS",
+                "IsRequired": true
             }
         ]
     }

@@ -31,6 +31,39 @@
             "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": true },
             "Value": "{ { \"Position\": { \"X\": 39, \"Y\": 23 }, \"Layer\": \"Back\", \"SetProperties\": { \"TouchAction\": \"MagicWarp 42 28 Woods\" } }, { { \"Position\": { \"X\": 40, \"Y\": 23 }, \"Layer\": \"Back\", \"SetProperties\": { \"TouchAction\": \"MagicWarp 39 47 Woods\" } },"
         },
+        {
+            "Name": "G",
+            "Value": "{{ModID}}_G"
+        },
+        {
+            "Name": "MushroomMeadowBGM1",
+            "Value": "{{ModID}}_PeacefulFireworks"
+        },
+        {
+            "Name": "MushroomMeadowBGM1",
+            "When": { "Music": "vanilla" },
+            "Value": "mermaidSong"
+        },
+        {
+            "Name": "MushroomMeadowBGM2",
+            "Value": "{{ModID}}_StygianLights"
+        },
+        {
+            "Name": "MushroomMeadowBGM2",
+            "When": { "Music": "vanilla" },
+            "Value": "junimoKart_mushroomMusic"
+        },
+        {
+            "Name": "MMInteriorBGM1",
+            "Value": "{{ModID}}_UNKNOWNENTITY"
+        },
+        {
+            "Name": "MMInteriorBGM1",
+            "When": { "Music": "vanilla" },
+            "Value": "junimoKart_ghostMusic"
+        }
+
+        
         
     ],
 
@@ -52,6 +85,13 @@
             "AllowBlank": false,
             "Description": "Toggle this option off if you do not want to add inedible mushrooms to your game.",
             "Section": "Mushroom configs",
+            },
+            "Music": 
+            {
+            "AllowValues": "custom, vanilla",
+            "Default": "custom",
+            "AllowBlank": false,
+            "Description": "This mod adds custom music tracks. If you prefer the original Stardew Valley music, turn this setting off. Custom music might also slow down your game in some instances, so if you are experiencing lag, disable this config as well.",
             },
             
     },
@@ -75,7 +115,37 @@
     "LogName": "Include map data",
     "Action": "Include",
     "FromFile": "data/mapdata.json"
-}
+},
+{
+    "LogName": "Include NPC",
+    "Action": "Include",
+    "FromFile": "data/NPC/NPCData.json"
+},
+{
+    "LogName": "Include dialogue",
+    "Action": "Include",
+    "FromFile": "data/NPC/dialogue.json"
+},
+{
+    "LogName": "Include schedule",
+    "Action": "Include",
+    "FromFile": "data/NPC/schedule.json"
+},
+{
+    "LogName": "Include custom music",
+    "Action": "Include",
+    "When": { "Music": "custom" },
+    "FromFile": "data/music.json"
+},
+
+//blank.json load
+
+{
+    "LogName": "Load Blank json",
+    "Action": "Load",
+    "Target": "Characters/Dialogue/{{G}}, Characters/schedules/{{G}}, Strings/StringsFromMaps/{{ModID}}_MushroomMeadow, Strings/StringsFromMaps/{{ModID}}_Interior, Data/Events/{{ModID}}_MushroomMeadow",
+    "FromFile": "data/blank.json"
+},
     
     ]
 }

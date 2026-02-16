@@ -1,0 +1,19 @@
+{
+    "Changes": [
+        {
+            "LogName": "vendor dialogue",
+            "Action": "EditData",
+            "Target": "Characters/dialogue/{{G}}",
+            "Entries": {
+                "spring": "No.",
+                "Mon": "I miss the 80s. I haven't been born yet.", 
+                "Tue": "I wanna go home.",
+                "Wed": "This is my angry/happy/sad face.",
+                "Thu": "Man, look, I don't even know what kind of mushrooms I'm selling here. I think they look neat. That's all. If you eat them and die, that's on you.",
+                "Fri": "I like people but I also don't like being around people. Only the right ones.#$b# %(you hear a very quiet 'You're not one of them)",
+                "Sat": "%incoherent screeching $action AddBuff 27 -2 $1",
+                "Sun": "$y 'What's your favorite animal?_Dogs._Wrong. Bunny._Frogs._Wrong. Bunny.",
+            }
+        }
+    ]
+}

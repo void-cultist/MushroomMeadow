@@ -1,0 +1,116 @@
+{
+    "Changes": [
+        {
+        "LogName": "Data/Character edit - create MM vendor",
+        "Action": "EditData",
+        "Target": "Data/Characters",
+        "Entries":
+        {
+            "{{G}}": 
+                { 
+                "DisplayName": "{{i18n:G}}",
+                "BirthSeason": "Fall",
+                "BirthDay": 20,
+                "HomeRegion": "Other", 
+                "Language": "Default",
+                "Gender": "Undefined",
+                "Age": "Adult",
+                "Manner": "Rude",
+                "SocialAnxiety": "Shy", 
+                "Optimism": "Negative", 
+                "IsDarkSkinned": false,
+                "CanBeRomanced": false,
+                "LoveInterest": null,
+                "Calendar": "HiddenUntilMet", //AlwaysShown, HiddenUntilMet, HiddenAlways for valid conditions of when their lil mugshot shows up on the calendar
+                "SocialTab": "UnknownUntilMet", //UnknownUntilMet, AlwaysShown, HiddenUntilMet, HiddenAlways for valid conditions of when their information on the social tab will show up
+                "CanSocialize": true,
+                "CanReceiveGifts": true, 
+                "CanGreetNearbyCharacters": false, 
+                "CanCommentOnPurchasedShopItems": false,
+                "CanVisitIsland": false,
+                "IntroductionsQuest": false, 
+                "ItemDeliveryQuests": false,
+                "PerfectionScore": false, 
+                "DumpsterDiveFriendshipEffect": -5, //whether the npc loses friendship with you if they catch you digging in the trash
+                "FlowerDanceCanDance": false,
+                "WinterStarGifts": [], //items that this npc can gift during the winter star festival https://stardewvalleywiki.com/Modding:Item_queries#Item_spawn_fields
+                "WinterStarParticipant": null, //whether the npc even participates in winter star, can be game state query-able
+                "UnlockConditions": "ANY \"IS_JOJA_MART_COMPLETE\" \"IS_COMMUNITY_CENTER_COMPLETE\"",
+                "SpawnIfMissing": true,
+                "Home": [ 
+                            {
+                            "Id": "Default",
+                            "Condition": null, //game state query-able condition if they change homes
+                            "Location": "{{ModID}}_Interior",
+                            "Tile": {
+                                        "X": 25,
+                                        "Y": 6
+                                        },
+                            "Direction": "down" //direction that they face while idling
+                            }
+                        ],
+            
+                "Breather": false, //whether this places the breathing animation over the npc
+                "ShakePortraits": [ 1 ], //the index of the portraits/npc to shake during dialogue, will always trigger
+                "HiddenProfileEmoteDuration": 4000, //how long the animation will run in miliseconds
+                "HiddenProfileEmoteStartFrame": 32, //whichever sprite index the frame is on
+                "HiddenProfileEmoteFrameCount": 2, //how many frames the sprite index will go through, going left to right
+                "HiddenProfileEmoteFrameDuration": 200.0, //how long each frame will last measured in miliseconds
+                "FormerCharacterNames": [], //used for older saves if the npc has changed names and must be globally unique
+                "CustomFields": null //custom fields is used for c# implementation
+                }
+        }
+    },
+
+
+
+
+
+//portraits and sprites
+{
+        	"LogName": "Base Portraits",
+        	"Action": "Load",
+        	"Target": "Portraits/{{G}}",
+        	"FromFile": "assets/NPC/portraits.png"
+   	 },		
+	 
+	 {
+        	"LogName": "Base Sprites",
+        	"Action": "Load",
+        	"Target": "Characters/{{G}}",
+        	"FromFile": "assets/NPC/sprites.png"
+   	 },
+//gift tastes
+
+    {
+            "LogName": "NPCGiftTastes Edit",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "{{G}}": "You're awesome, @! Is this where I tell you you're a goat or you slap?/444 112 122 167 403 404 440/Thanks, @! I'll put this to good use./248 279 286 287 288 334 335 336 337 338 396 399 787 917 372 428 -12/I appreciate the thought, but uh, this isn't really my thing./196 219 225 202 209 tiakall.bass.seabass/@, I feel like you really had to work to find something I'd dislike this much. This isn't appropriate to give to anyone, you know./747/Thanks for thinking of me, @./446 746 766 -7 -8 -9 -10 -15 -16 item_alcohol/"
+                
+                /* "/!!!!!!!!!!!!!/{{ModID}}_WaningMoonShroom
+                .../coffee_item/
+                meh.//
+                No./meat_item category_fish/
+                Lame./", */
+            }
+    },
+
+
+
+//schedule animation
+{
+            "LogName": "Schedule Animations",
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries":
+            {
+                "{{ModID}}_cursedanimation": "0/0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16 16 17 17 17 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 18 17 17 17 16 16/0",
+
+			}
+		},
+ 
+        
+    ]
+}

@@ -4,7 +4,7 @@
         {
             "LogName": "Load mushroom textures",
             "Action": "Load",
-            "Target": "{{ModID}}/Mushrooms1, {{ModID}}/Mushrooms2",
+            "Target": "{{ModID}}/Mushrooms1, {{ModID}}/Mushrooms2, {{ModID}}/SpritesGlionox, {{ModID}}/MushroomsSsugmi, {{ModID}}/MushroomsPixerelia",
             "FromFile": "assets/objects/{{TargetWithoutPath}}.png"
         },
 
@@ -80,6 +80,23 @@
                     "ContextTags": [  "color_orange", "color_yellow", "preserves_pickle", "edible_mushroom" ],
                 
                 },
+                "MM_ParasolMushroom":
+                {
+                  "Name": "MM_ParasolMushroom",
+                     "DisplayName": "{{i18n:ParasolMushroomDisplayName}}",
+                    "Description": "{{i18n:ParasolMushroomDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 200, 
+                   "Texture": "{{ModID}}/SpritesGlionox", 
+                    "SpriteIndex": 3, 
+                   "Edibility": 38,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom" ]
+                }
+
+               
+                
         },
 
         },
@@ -123,6 +140,55 @@
                     "ContextTags": [  "color_dark_red", "color_dark_pink", "color_red", "poisonous_mushroom" ],
                 
                 },
+                "MM_SulfurTuft":  
+                    {
+                       "Name": "MM_SulfurTuft",
+                       "DisplayName": "{{i18n:SulfurTuftDisplayName}}",
+                        "Description": "{{i18n:SulfurTuftDescription}}",
+                      "Type": "Basic",
+                        "Category": -81,
+                        "Price": 60, 
+                       "Texture": "{{ModID}}/SpritesGlionox", 
+                        "SpriteIndex": 0, 
+                       "Edibility": -30,
+                        "IsDrink": false,
+                        "ContextTags": [ "color_yellow", "poisonous_mushroom"],
+                       "Buffs": [
+                            {
+                                "Id": "{{ModID}}_SulfurTuftDebuff",
+                                "Duration": 1000,
+                                "CustomAttributes": {
+                                      "ForagingLevel": -1.0,
+                                      "Defense": -2.0
+                                    },
+                                "IsDebuff": true
+                            }
+                       ]
+                    },
+                  "MM_BleedingHeart":
+                      {
+                         "Name": "MM_BleedingHeart",
+                         "DisplayName": "{{i18n:BleedingHeartDisplayName}}",
+                          "Description": "{{i18n:BleedingHeartDescription}}",
+                        "Type": "Basic",
+                          "Category": -81,
+                          "Price": 4000, 
+                         "Texture": "{{ModID}}/SpritesGlionox", 
+                          "SpriteIndex": 10, 
+                         "Edibility": -240,
+                          "IsDrink": false,
+                          "ContextTags": [ "poisonous_mushroom"],
+                         "Buffs": [
+                              {
+                                  "Id": "{{ModID}}_BleedingHeartDebuff",
+                                  "BuffId": [ 14 ],
+                                  "Duration": 2000,
+                                  "IsDebuff": true
+                              }
+                         ]
+                      },
+                     
+                   
 
         },
 
@@ -184,6 +250,21 @@
                 
                 },
                 
+                  "MM_WaningMoonShroom":
+                {
+                   "Name": "MM_WaningMoonShroom",
+                   "DisplayName": "{{i18n:WaningMoonShroomDisplayName}}",
+                    "Description": "{{i18n:WaningMoonShroomDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 4000, 
+                   "Texture": "{{ModID}}/Mushrooms2", 
+                    "SpriteIndex": 4, 
+                   "Edibility": -1,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_pale_violet", "color_grey", "inedible_mushroom" ],
+                
+                },
         },
 
         },
